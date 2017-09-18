@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TruthService } from '../truth.service';
+
+
 @Component({
   selector: 'app-monkey-list',
   templateUrl: './monkey-list.component.html',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonkeyListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private truthService: TruthService) { }
 
   ngOnInit() {
   }

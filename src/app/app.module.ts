@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonkeyComponent } from './monkey/monkey.component';
 import { MonkeyListComponent } from './monkey-list/monkey-list.component';
+import { TruthService } from './truth.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { MonkeyListComponent } from './monkey-list/monkey-list.component';
     AppRoutingModule
 
   ],
-  providers: [],
+  providers: [TruthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
