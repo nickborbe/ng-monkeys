@@ -6,6 +6,10 @@
 }
 h1{
   text-align: center;
+  font-size: 45px;
+  /*background-color: hsl(180, 59%, 80%);
+  border-top: 0.1px solid grey;
+  border-bottom: 0.1px solid grey;*/
 }
 
 #container {
@@ -14,9 +18,12 @@ h1{
   font-family: Oxygen, sans-serif;
   margin: 0 auto;
   width: 100%;
+  text-align: center;
 }
 .tree {
+  text-align: center;
   width: 100%;
+  margin: 0 7% 0 7%;
 }
 .tree time {
   display: block;
@@ -89,7 +96,9 @@ h1{
 	border: 1px solid #ccc;
 	padding: 10px;
 	text-decoration: none;
-  width: min-content;
+  min-width: 140px;
+  max-width: 300px;
+  width: 90%;
 	color: #666;
 	font-size: 1rem;
 	display: inline-block;
@@ -111,31 +120,9 @@ h1{
 .tree li a:hover+ul ul::before{
 	border-color:  #94a0b4;
 }
-@media all and (max-width: 1475px) {
-  .tree {
-    width: 100%;
-  }
-}
+
+
 @media all and (max-width: 875px) {
-  #container {
-    width: 600px;
-  }
-  .tree img {
-    width: 100px;
-  }
-}
-@media all and (max-width: 575px) {
-    #container {
-      width: 570px;
-    }
-    .tree img {
-      display: none;
-  }
-  .tree li a {
-    width: 110px;
-  }
-}
-@media all and (max-width: 500px) {
   .tree time {
     display: inline-block;
   }
