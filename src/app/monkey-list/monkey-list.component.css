@@ -60,12 +60,12 @@ h1{
 	content: '';
 	position: absolute;
   top: 0; right: 50%;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid black;
 	width: 50%; height: 20px;
 }
 .tree li::after{
 	right: auto; left: 50%;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid black;
 }
 .tree li:only-child::after,
 .tree li:only-child::before {
@@ -79,7 +79,7 @@ h1{
 	border: 0;
 }
 .tree li:last-child::before{
-	border-right: 1px solid #ccc;
+	border-right: 1px solid black;
 	border-radius: 0 5px 0 0;
 }
 .tree li:first-child::after{
@@ -89,11 +89,11 @@ h1{
 	content: '';
 	position: absolute;
   top: 0; left: 50%;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid black;
 	width: 0; height: 20px;
 }
 .tree li a {
-	border: 1px solid #ccc;
+	border: 1px solid black;
 	padding: 10px;
 	text-decoration: none;
   width: 140px;
