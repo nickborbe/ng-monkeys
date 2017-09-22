@@ -11,6 +11,11 @@ import { TruthService } from '../truth.service';
 export class MonkeyListComponent implements OnInit {
 
   monkeys = [];
+  callitrichidae = [];
+  cebidae = [];
+  atelidae = [];
+  aotidae = [];
+  pitheciidae = [];
   which_world = "new";
   errorMessage = "";
 

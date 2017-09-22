@@ -3,6 +3,20 @@
   Know Your Monkeys
 </h1>
 
+<div class="error" *ngIf="errorMessage"> {{ errorMessage }} </div>
+
+<!-- <div class="phone-list">
+  <div *ngFor="let oneMonkey of monkeys">
+    <img [src]="onePhone.image">
+    <h3> {{ onePhone.name }} </h3>
+    <p> {{ onePhone.brand }} </p>
+    <a [routerLink]="['phone', onePhone._id]">
+      View Details
+    </a>
+  </div>
+</div> -->
+
+
 <div id="container">
 	<ul class="tree">
 		<li>
