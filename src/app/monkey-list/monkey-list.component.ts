@@ -10,9 +10,20 @@ import { TruthService } from '../truth.service';
 })
 export class MonkeyListComponent implements OnInit {
 
+  monkeys = [];
+  which_world = "new";
+  errorMessage = "";
+
   constructor(private truthService: TruthService) { }
 
   ngOnInit() {
+    this.truthService.getMonkeys()
+  .then((list) => {
+    this.monkeys = list;
+  })
+  .catch((err) => {
+    this.errorMessage = 'There was an error. Try again later.';
+  });
   }
 
 }
