@@ -4,7 +4,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class TruthService {
-BASE_URL = "localhost:3000"
+BASE_URL = "http://localhost:3000"
 
   constructor(private myHttp: Http) { }
 
