@@ -17,7 +17,8 @@ import { TruthService } from './truth.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
 
   ],
   providers: [TruthService],
