@@ -22,6 +22,15 @@ text-stroke: 0.1px white;*/
   width: 100%;
   text-align: center;
 }
+
+.which-world-btns{
+  text-align: center;
+}
+
+.monkey-world-btns{
+
+}
+
 .tree {
   text-align: center;
   width: 100%;
