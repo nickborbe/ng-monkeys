@@ -9,7 +9,7 @@ import { TruthService } from '../truth.service';
   styleUrls: ['./monkey-list.component.css']
 })
 export class MonkeyListComponent implements OnInit {
-
+  whichWorld = "";
   monkeys = [];
   callitrichidae = [];
   cebidae = [];
@@ -22,8 +22,9 @@ export class MonkeyListComponent implements OnInit {
   constructor(private truthService: TruthService) { }
 
   ngOnInit() {
-    this.truthService.getMonkeys()
-  .then((list) => {
+
+  this.truthService.getMonkeys()
+    .then((list) => {
     this.monkeys = list;
     this.callitrichidae = list.filter((monkey)=>{ return monkey.family === "Callitrichidae"});
     this.cebidae = list.filter((monkey)=>{ return monkey.family === "Cebidae"});
@@ -34,6 +35,11 @@ export class MonkeyListComponent implements OnInit {
   .catch((err) => {
     this.errorMessage = 'There was an error. Try again later.';
   });
-  }
+
+  // figure out which world
+  this.truthService.whichWorld
+    .subscribe((result)=>{this.whichWorld = result});
+    //
+  } // ngOnInit
 
 }

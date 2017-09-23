@@ -3,13 +3,10 @@ import { Http } from '@angular/http';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import 'rxjs/add/operator/toPromise';
 
-
 @Injectable()
 export class TruthService {
 BASE_URL = "http://localhost:3000"
-
 whichWorld:BehaviorSubject<string> = new BehaviorSubject("new");
-
 
   constructor(private myHttp: Http) { }
 
@@ -28,6 +25,6 @@ whichWorld:BehaviorSubject<string> = new BehaviorSubject("new");
   }
 
 
-  
+
 
 }
