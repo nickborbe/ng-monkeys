@@ -23,6 +23,15 @@ text-stroke: 0.1px white;*/
   text-align: center;
 }
 
+.monkey-tree-heading{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #EEE;
+  -webkit-text-stroke: 3px #000065;
+  text-stroke: 3px #000065;
+
+}
+
 .which-world-btns{
   height: 90px;
 }
