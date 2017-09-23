@@ -36,7 +36,7 @@ export class MonkeyListComponent implements OnInit {
     this.errorMessage = 'There was an error. Try again later.';
   });
 
-  // figure out which world
+  // figure out which world to show
   this.truthService.whichWorld
     .subscribe((result)=>{this.whichWorld = result});
     //
