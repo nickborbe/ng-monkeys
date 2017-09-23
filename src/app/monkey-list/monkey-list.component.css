@@ -16,7 +16,7 @@ text-stroke: 0.1px white;*/
 
 #container {
   background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));
-  min-height: 100vh;
+  min-height: 140vh;
   font-family: Oxygen, sans-serif;
   margin: 0 auto;
   width: 100%;
@@ -24,11 +24,20 @@ text-stroke: 0.1px white;*/
 }
 
 .which-world-btns{
-  text-align: center;
+  height: 90px;
 }
 
 .monkey-world-btns{
-
+  background-color: #000065;
+  border: none;
+  padding: 2.5px 5px;
+  font-size: 19px;
+}
+.monkey-world-btns:hover{
+  font-size: 21px;
+  background-color: hsl(0, 0, 60%);
+  border: 1px solid #94a0b4;
+  color: #fff;
 }
 
 .tree {
