@@ -19,16 +19,15 @@ whichWorld:BehaviorSubject<string> = new BehaviorSubject("new");
     .then(apiResponse => apiResponse.json())
   }
 
-  changeWorld()  {
-    var world;
-
-    this.whichWorld.subscribe((result)=>{ world = result});
-
-    if(world === "new"){
-      this.whichWorld.next("old");
-    }else if(world ==="old"){
+  makeNewWorld()  {
       this.whichWorld.next("new");
-    }
   }
+
+  makeOldWorld(){
+    this.whichWorld.next("old");
+  }
+
+
+  
 
 }
