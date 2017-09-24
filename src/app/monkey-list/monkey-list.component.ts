@@ -15,7 +15,7 @@ export class MonkeyListComponent implements OnInit {
   atelidae = [];
   aotidae = [];
   pitheciidae = [];
-  whichWorld = "new";
+  whichWorld = "";
   errorMessage = "";
 
   constructor(private truthService: TruthService) { }
