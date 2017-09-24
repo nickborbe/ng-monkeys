@@ -21,6 +21,17 @@ export class MonkeyListComponent implements OnInit {
 
   constructor(private truthService: TruthService) { }
 
+  makeNewWorld(){
+    console.log("make new world works!?");
+    this.truthService.makeNewWorld();
+  }
+
+  makeOldWorld(){
+    console.log("make old world works?!");
+    this.truthService.makeOldWorld();
+  }
+
+
   ngOnInit() {
 
   this.truthService.getMonkeys()
