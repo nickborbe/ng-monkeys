@@ -9,14 +9,13 @@ import { TruthService } from '../truth.service';
   styleUrls: ['./monkey-list.component.css']
 })
 export class MonkeyListComponent implements OnInit {
-  whichWorld = "";
   monkeys = [];
   callitrichidae = [];
   cebidae = [];
   atelidae = [];
   aotidae = [];
   pitheciidae = [];
-  which_world = "new";
+  whichWorld = "new";
   errorMessage = "";
 
   constructor(private truthService: TruthService) { }
@@ -51,6 +50,6 @@ export class MonkeyListComponent implements OnInit {
   this.truthService.whichWorld
     .subscribe((result)=>{this.whichWorld = result});
     //
-  } // ngOnInit
+  } // ngOnIni
 
 }
