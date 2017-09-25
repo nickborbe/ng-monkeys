@@ -7,6 +7,8 @@ import 'rxjs/add/operator/toPromise';
 export class TruthService {
 BASE_URL = "http://localhost:3000"
 whichWorld:BehaviorSubject<string> = new BehaviorSubject("new");
+whichWorldPreview:BehaviorSubject<string> = new BehaviorSubject("new");
+
 
   constructor(private myHttp: Http) { }
 
@@ -22,6 +24,14 @@ whichWorld:BehaviorSubject<string> = new BehaviorSubject("new");
 
   makeOldWorld(){
     this.whichWorld.next("old");
+  }
+
+  previewNewWorld()  {
+      this.whichWorldPreview.next("new");
+  }
+
+  previewOldWorld(){
+    this.whichWorldPreview.next("old");
   }
 
 

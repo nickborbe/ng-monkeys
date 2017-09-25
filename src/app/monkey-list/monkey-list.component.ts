@@ -16,6 +16,7 @@ export class MonkeyListComponent implements OnInit {
   aotidae = [];
   pitheciidae = [];
   whichWorld = "";
+  whichWorldPreview = "";
   errorMessage = "";
 
   constructor(private truthService: TruthService) { }
@@ -30,6 +31,15 @@ export class MonkeyListComponent implements OnInit {
     this.truthService.makeOldWorld();
   }
 
+  previewNewWorld(){
+    console.log("make new world works!?");
+    this.truthService.previewNewWorld();
+  }
+
+  previewOldWorld(){
+    console.log("make old world works?!");
+    this.truthService.previewOldWorld();
+  }
 
   ngOnInit() {
 
@@ -50,6 +60,8 @@ export class MonkeyListComponent implements OnInit {
   this.truthService.whichWorld
     .subscribe((result)=>{this.whichWorld = result});
     //
-  } // ngOnIni
+  this.truthService.whichWorldPreview
+    .subscribe((result)=>{this.whichWorldPreview = result});
+  } // ngOnInit
 
 }
