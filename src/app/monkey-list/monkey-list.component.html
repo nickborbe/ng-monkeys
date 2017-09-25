@@ -6,11 +6,11 @@
   <div class="row which-world-btns">
     <div class="col-md-4"></div>
     <div class="col-md-2">
-      <button (click)="makeNewWorld()" type="button" class="btn btn-primary monkey-world-btns">New World Monkeys</button>
+      <button (click)="makeNewWorld()" (mouseover)="makeNewWorld()" (mouseleave)="makeOldWorld()" type="button" class="btn btn-primary monkey-world-btns">New World Monkeys</button>
     </div>
     <div class="col-md-2">
       <div class="col-md-4"></div>
-    <button type="button" class="btn btn-primary monkey-world-btns" (click)="makeOldWorld()">Old World Monkeys</button>
+    <button (click)="makeOldWorld()" (mouseover)="makeOldWorld()" (mouseleave)="makeNewWorld()" type="button" class="btn btn-primary monkey-world-btns">Old World Monkeys</button>
   </div>
 </div>
 
