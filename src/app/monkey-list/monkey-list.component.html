@@ -14,7 +14,7 @@
   </div>
 </div>
 
-	<ul class="tree" *ngIf="whichWorldPreview != 'old' && whichWorld == 'new'">
+	<ul class="tree" *ngIf="whichWorldPreview == 'new' || whichWorldPreview != 'old' && whichWorld == 'new'">
 		<li>
 			<a href="#">
         <img src="#" alt>
@@ -94,7 +94,7 @@
 
     </ul>
 
-    <ul class="tree" *ngIf="whichWorldPreview != 'new' && whichWorld == 'old'">
+    <ul class="tree" *ngIf="whichWorldPreview == 'old' || whichWorldPreview != 'new' && whichWorld == 'old'">
   		<li>
   			<a href="#">
           <img src="#" alt>
