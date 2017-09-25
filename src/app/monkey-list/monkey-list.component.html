@@ -6,15 +6,15 @@
   <div class="row which-world-btns">
     <div class="col-md-4"></div>
     <div class="col-md-2">
-      <button (click)="makeNewWorld()" (mouseover)="makeNewWorld()" (mouseleave)="makeOldWorld()" type="button" class="btn btn-primary monkey-world-btns">New World Monkeys</button>
+      <button (click)="makeNewWorld()" (mouseover)="previewNewWorld()" (mouseleave)="previewNoWorld()" type="button" class="btn btn-primary monkey-world-btns">New World Monkeys</button>
     </div>
     <div class="col-md-2">
       <div class="col-md-4"></div>
-    <button (click)="makeOldWorld()" (mouseover)="makeOldWorld()" (mouseleave)="makeNewWorld()" type="button" class="btn btn-primary monkey-world-btns">Old World Monkeys</button>
+    <button (click)="makeOldWorld()" (mouseover)="previewOldWorld()" (mouseleave)="previewNoWorld()" type="button" class="btn btn-primary monkey-world-btns">Old World Monkeys</button>
   </div>
 </div>
 
-	<ul class="tree" *ngIf="whichWorld == 'new'">
+	<ul class="tree" *ngIf="whichWorldPreview != 'old' && whichWorld == 'new'">
 		<li>
 			<a href="#">
         <img src="#" alt>
@@ -94,7 +94,7 @@
 
     </ul>
 
-    <ul class="tree" *ngIf="whichWorld == 'old'">
+    <ul class="tree" *ngIf="whichWorldPreview != 'new' && whichWorld == 'old'">
   		<li>
   			<a href="#">
           <img src="#" alt>

@@ -34,6 +34,10 @@ whichWorldPreview:BehaviorSubject<string> = new BehaviorSubject("new");
     this.whichWorldPreview.next("old");
   }
 
+  previewNoWorld(){
+    this.whichWorldPreview.next("");
+  }
+
 
 
 
