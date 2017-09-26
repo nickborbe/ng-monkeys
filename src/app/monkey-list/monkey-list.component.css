@@ -14,6 +14,15 @@ text-stroke: 0.1px white;*/
   border-bottom: 0.1px solid grey;*/
 }
 
+.whole-page{
+
+}
+
+.top-logo{
+  background: linear-gradient(#add8e6, hsl(180, 59%, 80%));
+  text-align: center;
+}
+
 #container {
   background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));
   min-height: 100vh;
