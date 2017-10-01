@@ -160,9 +160,9 @@ text-stroke: 0.1px white;*/
 
 
 .tree li a {
-        animation:myfirst 5s;
-      -moz-animation:myfirst 5s infinite; /* Firefox */
-    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+        animation:myfirst 4s;
+      -moz-animation:myfirst 4s infinite; /* Firefox */
+    -webkit-animation:myfirst 4s infinite; /* Safari and Chrome */
       }
 
 
@@ -186,9 +186,8 @@ text-stroke: 0.1px white;*/
      background: white;
       border: 1px solid #94a0b4;
       color: #fff;
-      font-size: 17px;
+      font-size: 18px;
       width: 150px;
-      
     }
 
 
