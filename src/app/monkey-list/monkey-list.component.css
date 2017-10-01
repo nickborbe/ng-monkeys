@@ -149,12 +149,7 @@ text-stroke: 0.1px white;*/
  color: #CCC;
 
 }
-.tree li a:hover,
-.tree li a:hover+ul li a {
-	background: hsl(140, 80%, 10%);
-  border: 1px solid #94a0b4;
-  color: #fff;
-}
+
 .tree li a:hover+ul li::after,
 .tree li a:hover+ul li::before,
 .tree li a:hover+ul::before,
@@ -164,11 +159,7 @@ text-stroke: 0.1px white;*/
 
 
 
-
-
 .tree li a {
-  
-        background:red;
         animation:myfirst 5s;
       -moz-animation:myfirst 5s infinite; /* Firefox */
     -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
@@ -177,16 +168,23 @@ text-stroke: 0.1px white;*/
 
       @-moz-keyframes myfirst /* Firefox */
     {
-    0%   {background:red;}
-    50%  {background:yellow;}
-    100%   {background:red;}
+      0%  {background:#222250;}
+      50%   {background:hsl(140, 80%, 10%);}
+      100%   {background:#222250;}
     }
 
         @-webkit-keyframes myfirst /* Safari and Chrome */
     {
-    0%   {background:red;}
-    50%  {background:yellow;}
-    100%   {background:red;}
+      0%  {background:#222250;}
+      50%   {background:hsl(140, 80%, 10%);}
+      100%   {background:#222250;}
+    }
+
+    .tree li a:hover,
+    .tree li a:hover+ul li a {
+     background: rgba(55,55,128,0.5);
+      border: 1px solid #94a0b4;
+      color: #fff;
     }
 
 
