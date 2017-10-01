@@ -58,6 +58,9 @@ export class MonkeyListComponent implements OnInit {
     this.atelidae = list.filter((monkey)=>{ return monkey.sub_family === "Atelidae"});
     this.aotidae = list.filter((monkey)=>{ return monkey.sub_family === "Aotidae"});
     this.pitheciidae = list.filter((monkey)=>{ return monkey.sub_family === "Pitheciidae"});
+    this.colobinae = list.filter((monkey)=>{ return monkey.sub_family === "Colobinae"});
+    this.cercopithecinae = list.filter((monkey)=>{ return monkey.sub_family === "Cercopithecinae"});
+
   })
   .catch((err) => {
     this.errorMessage = 'There was an error. Try again later.';
