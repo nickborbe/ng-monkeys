@@ -7,10 +7,43 @@ import { TruthService } from '../truth.service';
   styleUrls: ['./monkey-details.component.css']
 })
 export class MonkeyDetailsComponent implements OnInit {
+  phone: Object;
+    errorMessage: string = '';
 
-  constructor() { }
+    constructor(
+      private myRoute: ActivatedRoute,
+      private myPhoneService: PhoneService,
+      private myNavigator: Router
+    ) { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+      this.myRoute.params.subscribe((params) => {
+        this.getPhoneDetails(params['id']);
+      });
+    }
+
+    getPhoneDetails(id) {
+      this.myPhoneService.get(id)
+        .then((thePhoneDetails) => {
+          this.phone = thePhoneDetails;
+        })
+        .catch((err) => {
+          this.errorMessage = 'Could not retrieve phone details. Try again later.';
+        });
+    }
+
+    deletePhone() {
+      if (!window.confirm('Are you sure?')) {
+        return;
+      }
+
+      this.myPhoneService.remove(this.phone['_id'])
+        .then(() => {
+          this.myNavigator.navigate(['/']);
+        })
+        .catch((err) => {
+          this.errorMessage = 'Could not retrieve phone details. Try again later.';
+        });
+    }
 
 }
