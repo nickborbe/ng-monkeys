@@ -205,8 +205,7 @@ text-stroke: 0.1px white;*/
 
     .tree li a:hover,
     .tree li a:hover+ul li a {
-     /*background: rgba(55,55,128,0.5);*/
-     background: white;
+
       border: 1px solid #94a0b4;
       color: #fff;
       font-size: 20px;
