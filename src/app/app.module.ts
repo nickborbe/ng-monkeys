@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { MonkeyComponent } from './monkey/monkey.component';
 import { MonkeyListComponent } from './monkey-list/monkey-list.component';
 import { TruthService } from './truth.service';
+import { MonkeyDetailsComponent } from './monkey-details/monkey-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonkeyComponent,
-    MonkeyListComponent
+    MonkeyListComponent,
+    MonkeyDetailsComponent
   ],
   imports: [
     BrowserModule,
