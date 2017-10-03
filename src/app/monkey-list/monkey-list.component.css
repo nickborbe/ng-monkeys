@@ -24,6 +24,7 @@ text-stroke: 0.1px white;*/
 }
 
 
+
 .monkey-tree-heading{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -65,7 +66,7 @@ text-stroke: 0.1px white;*/
   display: block;
   margin: 0 auto;
   margin-bottom: 1rem;
-  width: 150px;
+  width: 80px;
 }
 .tree time:before {
   content: "(";
@@ -157,8 +158,10 @@ text-stroke: 0.1px white;*/
   text-align: center;
   overflow-y: auto;
   padding-bottom: 50px;
-  
+
 }
+
+
 
 /*@-moz-keyframes chillface /* Firefox */
 /*{
