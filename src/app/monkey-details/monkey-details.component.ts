@@ -7,7 +7,7 @@ import { TruthService } from '../truth.service';
   styleUrls: ['./monkey-details.component.css']
 })
 export class MonkeyDetailsComponent implements OnInit {
-  phone: Object;
+  monkey = {};
     errorMessage: string = '';
 
     constructor(
