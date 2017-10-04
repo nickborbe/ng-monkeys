@@ -24,8 +24,8 @@ export class MonkeyDetailsComponent implements OnInit {
 
     getMonkeyDetails(id) {
       this.truthService.get(id)
-        .then((thePhoneDetails) => {
-          this.phone = thePhoneDetails;
+        .then((theMonkeyDetails) => {
+          this.monkey = theMonkeyDetails;
         })
         .catch((err) => {
           this.errorMessage = 'Sorry, something went wrong. Please try again.';
