@@ -28,7 +28,7 @@ export class MonkeyDetailsComponent implements OnInit {
           this.phone = thePhoneDetails;
         })
         .catch((err) => {
-          this.errorMessage = 'Could not retrieve phone details. Try again later.';
+          this.errorMessage = 'Sorry, something went wrong. Please try again.';
         });
     }
 
