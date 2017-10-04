@@ -38,6 +38,12 @@ whichWorldPreview:BehaviorSubject<string> = new BehaviorSubject("new");
     this.whichWorldPreview.next("");
   }
 
+  getMonkeyDetails(id) {
+  return this.myHttp.get(`${this.BASE_URL}/api/phones/${id}`)
+    .toPromise()
+    .then(apiResponse => apiResponse.json())
+}
+
 
 
 
