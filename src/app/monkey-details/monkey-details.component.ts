@@ -8,7 +8,7 @@ import { TruthService } from '../truth.service';
 })
 export class MonkeyDetailsComponent implements OnInit {
   monkey = {};
-    errorMessage: string = '';
+  errorMessage: string = '';
 
     constructor(
       private myRoute: ActivatedRoute,
