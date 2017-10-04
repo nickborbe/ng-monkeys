@@ -32,10 +32,7 @@ export class MonkeyDetailsComponent implements OnInit {
         });
     }
 
-    deletePhone() {
-      if (!window.confirm('Are you sure?')) {
-        return;
-      }
+  
 
       this.myPhoneService.remove(this.phone['_id'])
         .then(() => {
