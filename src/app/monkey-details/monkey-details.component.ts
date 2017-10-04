@@ -22,7 +22,7 @@ export class MonkeyDetailsComponent implements OnInit {
       });
     }
 
-    getPhoneDetails(id) {
+    getMonkeyDetails(id) {
       this.truthService.get(id)
         .then((thePhoneDetails) => {
           this.phone = thePhoneDetails;
@@ -34,6 +34,6 @@ export class MonkeyDetailsComponent implements OnInit {
 
 
 
-    
+
 
 }
