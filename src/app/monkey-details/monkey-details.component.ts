@@ -12,13 +12,13 @@ export class MonkeyDetailsComponent implements OnInit {
 
     constructor(
       private myRoute: ActivatedRoute,
-      private myPhoneService: PhoneService,
+      private truthService: TruthService,
       private myNavigator: Router
     ) { }
 
     ngOnInit() {
       this.myRoute.params.subscribe((params) => {
-        this.getPhoneDetails(params['id']);
+        this.getMonkeyDetails(params['id']);
       });
     }
 
