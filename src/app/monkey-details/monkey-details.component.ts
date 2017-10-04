@@ -32,15 +32,8 @@ export class MonkeyDetailsComponent implements OnInit {
         });
     }
 
-  
 
-      this.myPhoneService.remove(this.phone['_id'])
-        .then(() => {
-          this.myNavigator.navigate(['/']);
-        })
-        .catch((err) => {
-          this.errorMessage = 'Could not retrieve phone details. Try again later.';
-        });
-    }
+
+    
 
 }
