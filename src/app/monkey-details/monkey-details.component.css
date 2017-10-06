@@ -56,68 +56,68 @@ border-radius: 10px;
       @-moz-keyframes monkey-details-anim /* Firefox */
     {
       0%  {background:hsl(60, 80%, 20%);
-          color: white;}
+          color: hsl(180, 59%, 80%);}
       25%   {background:hsl(180, 59%, 80%);
-            color: black;}
+            color: hsl(60, 80%, 20%);}
       50%   {background:hsl(60, 80%, 20%);
-            color: white;}
+            color: hsl(180, 59%, 80%);}
 
       75%   {background:hsl(180, 59%, 80%);
-            color: black;}
+            color: hsl(60, 80%, 20%);}
 
       100%   {background:hsl(60, 80%, 20%);
-                  color: white;}
+                  color: hsl(180, 59%, 80%);}
     }
 
         @-webkit-keyframes monkey-details-anim /* Safari and Chrome */
     {
       0%  {background:hsl(60, 80%, 20%);
-          color: white;}
+          color: hsl(180, 59%, 80%);}
       25%   {background:hsl(180, 59%, 80%);
-            color: black;}
+            color: hsl(60, 80%, 20%);}
       50%   {background:hsl(60, 80%, 20%);
-            color: white;}
+            color: hsl(180, 59%, 80%);}
 
       75%   {background:hsl(180, 59%, 80%);
-            color: black;}
+            color: hsl(60, 80%, 20%);}
 
       100%   {background:hsl(60, 80%, 20%);
-                  color: white;}
+                  color: hsl(180, 59%, 80%);}
     }
 
 
     @-moz-keyframes monkey-details-anim2 /* Firefox */
   {
     0%   {background:hsl(180, 59%, 80%);
-      color: black;}
+      color: hsl(60, 80%, 20%);}
     25%  {background:hsl(60, 80%, 20%);
-        color: white;}
+        color: hsl(180, 59%, 80%);}
 
     50%   {background:hsl(180, 59%, 80%);
-          color: black;}
+          color: hsl(60, 80%, 20%);}
 
     75%   {background:hsl(60, 80%, 20%);
-            color: white;}
+            color: hsl(180, 59%, 80%);}
 
     100%   {background:hsl(180, 59%, 80%);
-          color: black;}
+          color: hsl(60, 80%, 20%);}
   }
 
       @-webkit-keyframes monkey-details-anim2 /* Safari and Chrome */
   {
     0%   {background:hsl(180, 59%, 80%);
-      color: black;}
+      color: hsl(60, 80%, 20%);}
     25%  {background:hsl(60, 80%, 20%);
-        color: white;}
+        color: hsl(180, 59%, 80%);}
 
     50%   {background:hsl(180, 59%, 80%);
-          color: black;}
+          color: hsl(60, 80%, 20%);}
 
     75%   {background:hsl(60, 80%, 20%);
-            color: white;}
+            color: hsl(180, 59%, 80%);}
 
     100%   {background:hsl(180, 59%, 80%);
-          color: black;}
+          color: hsl(60, 80%, 20%);}
   }
 
 
