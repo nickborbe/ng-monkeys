@@ -67,6 +67,7 @@ text-stroke: 0.1px white;*/
   margin: 0 auto;
   margin-bottom: 1rem;
   width: 100%;
+  border-radius: 5px;
 }
 .tree time:before {
   content: "(";
