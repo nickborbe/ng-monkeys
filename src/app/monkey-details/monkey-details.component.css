@@ -31,10 +31,10 @@ width: 200px;
 
 
 
-#container p{
+#container p:nth-child(odd){
   padding: 10px;
   border-radius: 20px;
-  margin: 5px;
+  margin: 15px;
       animation:monkey-details-anim 50s;
       -moz-animation:monkey-details-anim 50s infinite; /* Firefox */
     -webkit-animation:monkey-details-anim 50s infinite; /* Safari and Chrome */
@@ -42,6 +42,15 @@ width: 200px;
       }
 
 
+      #container p:nth-child(even){
+        padding: 10px;
+        border-radius: 20px;
+        margin: 15px;
+            animation:monkey-details-anim2 50s;
+            -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
+          -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
+
+            }
       @-moz-keyframes monkey-details-anim /* Firefox */
     {
       0%  {background:hsl(60, 80%, 20%);
@@ -73,6 +82,42 @@ width: 200px;
       100%   {background:hsl(60, 80%, 20%);
                   color: white;}
     }
+
+
+    @-moz-keyframes monkey-details-anim2 /* Firefox */
+  {
+    0%   {background:hsl(180, 59%, 80%);
+      color: black;}
+    25%  {background:hsl(60, 80%, 20%);
+        color: white;}
+
+    50%   {background:hsl(180, 59%, 80%);
+          color: black;}
+
+    75%   {background:hsl(60, 80%, 20%);
+            color: white;}
+
+    100%   {background:hsl(180, 59%, 80%);
+          color: black;}
+  }
+
+      @-webkit-keyframes monkey-details-anim2 /* Safari and Chrome */
+  {
+    0%   {background:hsl(180, 59%, 80%);
+      color: black;}
+    25%  {background:hsl(60, 80%, 20%);
+        color: white;}
+
+    50%   {background:hsl(180, 59%, 80%);
+          color: black;}
+
+    75%   {background:hsl(60, 80%, 20%);
+            color: white;}
+
+    100%   {background:hsl(180, 59%, 80%);
+          color: black;}
+  }
+
 
 
 
