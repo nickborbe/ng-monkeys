@@ -12,8 +12,7 @@
 
 
 .monkey-pic1{
-width: 100px;
-
+width: 200px;
 }
 .monkey-pic2{
 
@@ -31,7 +30,9 @@ width: 100px;
   z-index: 10;
 }
 
-#container p {
+
+
+#container p, .monkey-pic-background{
   padding: 10px;
   border-radius: 20px;
   margin: 5px;
@@ -72,4 +73,11 @@ width: 100px;
 
       100%   {background:hsl(60, 80%, 20%);
                   color: white;}
+    }
+
+
+
+    .monkey-pic-background{
+      display: inline-block;
+      padding: 20px;
     }
