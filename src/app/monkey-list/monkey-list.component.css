@@ -205,8 +205,8 @@ text-stroke: 0.1px white;*/
 
     .tree li a:hover,
     .tree li a:hover+ul li a {
-
-      border: 1px solid #94a0b4;
+      padding: 15px;
+      border: 4px solid #94a0b4;
       color: #fff;
       font-size: 20px;
       width: 150px;
