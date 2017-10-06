@@ -32,7 +32,7 @@ width: 200px;
 
 
 
-#container p, .monkey-pic-background{
+#container p{
   padding: 10px;
   border-radius: 20px;
   margin: 5px;
@@ -77,7 +77,12 @@ width: 200px;
 
 
 
-    .monkey-pic-background{
-      display: inline-block;
-      padding: 20px;
-    }
+
+.monkey-pic-background{
+  border-radius: 20px;
+  display: inline-block;
+  padding: 20px;
+  animation:monkey-details-anim 50s;
+  -moz-animation:monkey-details-anim 50s infinite; /* Firefox */
+-webkit-animation:monkey-details-anim 50s infinite; /* Safari and Chrome */
+  }
