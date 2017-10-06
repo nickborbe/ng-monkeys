@@ -167,23 +167,7 @@ text-stroke: 0.1px white;*/
 }
 
 
-
-/*@-moz-keyframes chillface /* Firefox */
-/*{
-0%  {  background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));}
-50%   {  background: linear-gradient(hsl(60, 80%, 20%), hsl(180, 59%, 80%));}
-100%   {  background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));}
-}
-
-  @-webkit-keyframes chillface /* Safari and Chrome */
-/*{
-0%  {  background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));}
-50%   {  background: linear-gradient(hsl(60, 80%, 20%), hsl(180, 59%, 80%));}
-100%   {  background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));}
-}*/
-
-
-.tree li a {
+.a1 {
       animation:myfirst 4s;
       -moz-animation:myfirst 4s infinite; /* Firefox */
     -webkit-animation:myfirst 4s infinite; /* Safari and Chrome */
@@ -203,6 +187,26 @@ text-stroke: 0.1px white;*/
       50%   {background:hsl(140, 80%, 10%);}
       100%   {background:#222250;}
     }
+
+    .genus {
+          animation:mysecond 4s;
+          -moz-animation:mysecond 4s infinite; /* Firefox */
+        -webkit-animation:mysecond 4s infinite; /* Safari and Chrome */
+          }
+
+    @-moz-keyframes mysecond /* Firefox */
+  {
+    0%  {background:hsl(140, 80%, 10%);}
+    50%   {background:#222250;}
+    100%   {background:hsl(140, 80%, 10%);}
+  }
+
+      @-webkit-keyframes mysecond /* Safari and Chrome */
+  {
+    0%  {background:hsl(140, 80%, 10%);}
+    50%   {background:#222250;}
+    100%   {background:hsl(140, 80%, 10%);}
+  }
 
     .tree li a:hover,
     .tree li a:hover+ul li a {
