@@ -188,7 +188,7 @@ text-stroke: 0.1px white;*/
       100%   {background:#222250;}
     }
 
-    .genus {
+    .genus, .monkey-world-btns {
           animation:mysecond 4s;
           -moz-animation:mysecond 4s infinite; /* Firefox */
         -webkit-animation:mysecond 4s infinite; /* Safari and Chrome */
