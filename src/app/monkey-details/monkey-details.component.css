@@ -36,3 +36,33 @@
   font-weight: bold;
   z-index: 10;
 }
+
+#container p {
+  padding: 5px;
+  border-radius: 20%;
+      animation:myfirst 10s;
+      -moz-animation:myfirst 10s infinite; /* Firefox */
+    -webkit-animation:myfirst 10s infinite; /* Safari and Chrome */
+
+      }
+
+
+      @-moz-keyframes myfirst /* Firefox */
+    {
+      0%  {background:hsl(60, 80%, 20%);
+          color: white;}
+      50%   {background:hsl(180, 59%, 80%);
+            color: black;}
+      100%   {background:hsl(60, 80%, 20%);
+            color: white;}
+    }
+
+        @-webkit-keyframes myfirst /* Safari and Chrome */
+    {
+      0%  {background:hsl(60, 80%, 20%);
+          color: white;}
+      50%   {background:hsl(180, 59%, 80%);
+            color: black;}
+      100%   {background:hsl(60, 80%, 20%);
+            color: white;}
+    }
