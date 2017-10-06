@@ -9,13 +9,15 @@ import { MonkeyComponent } from './monkey/monkey.component';
 import { MonkeyListComponent } from './monkey-list/monkey-list.component';
 import { TruthService } from './truth.service';
 import { MonkeyDetailsComponent } from './monkey-details/monkey-details.component';
+import { MonkeyBoxComponent } from './monkey-box/monkey-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonkeyComponent,
     MonkeyListComponent,
-    MonkeyDetailsComponent
+    MonkeyDetailsComponent,
+    MonkeyBoxComponent
   ],
   imports: [
     BrowserModule,

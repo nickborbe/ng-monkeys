@@ -21,7 +21,7 @@ export class MonkeyDetailsComponent implements OnInit {
         this.getMonkeyDetails(params['id']);
       });
     }
-
+    
     getMonkeyDetails(id) {
       this.truthService.getMonkeyDetails(id)
         .then((theMonkeyDetails) => {

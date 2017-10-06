@@ -35,9 +35,9 @@ width: 100px;
   padding: 10px;
   border-radius: 20px;
   margin: 5px;
-      animation:monkey-details-anim 30s;
-      -moz-animation:monkey-details-anim 30s infinite; /* Firefox */
-    -webkit-animation:monkey-details-anim 30s infinite; /* Safari and Chrome */
+      animation:monkey-details-anim 50s;
+      -moz-animation:monkey-details-anim 50s infinite; /* Firefox */
+    -webkit-animation:monkey-details-anim 50s infinite; /* Safari and Chrome */
 
       }
 
@@ -46,18 +46,30 @@ width: 100px;
     {
       0%  {background:hsl(60, 80%, 20%);
           color: white;}
-      50%   {background:hsl(180, 59%, 80%);
+      25%   {background:hsl(180, 59%, 80%);
             color: black;}
-      100%   {background:hsl(60, 80%, 20%);
+      50%   {background:hsl(60, 80%, 20%);
             color: white;}
+
+      75%   {background:hsl(180, 59%, 80%);
+            color: black;}
+
+      100%   {background:hsl(60, 80%, 20%);
+                  color: white;}
     }
 
         @-webkit-keyframes monkey-details-anim /* Safari and Chrome */
     {
       0%  {background:hsl(60, 80%, 20%);
           color: white;}
-      50%   {background:hsl(180, 59%, 80%);
+      25%   {background:hsl(180, 59%, 80%);
             color: black;}
-      100%   {background:hsl(60, 80%, 20%);
+      50%   {background:hsl(60, 80%, 20%);
             color: white;}
+
+      75%   {background:hsl(180, 59%, 80%);
+            color: black;}
+
+      100%   {background:hsl(60, 80%, 20%);
+                  color: white;}
     }
