@@ -16,10 +16,10 @@ width: 100px;
 
 }
 .monkey-pic2{
-  height: 40%;
+
   min-height: 400px;
   max-height: 600px;
-  max-width: 48%;
+  max-width: 52%;
 
   float: right;
 }
@@ -32,8 +32,9 @@ width: 100px;
 }
 
 #container p {
-  padding: 5px;
-  border-radius: 20%;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px;
       animation:monkey-details-anim 30s;
       -moz-animation:monkey-details-anim 30s infinite; /* Firefox */
     -webkit-animation:monkey-details-anim 30s infinite; /* Safari and Chrome */
