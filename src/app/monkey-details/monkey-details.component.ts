@@ -7,24 +7,11 @@ import { TruthService } from '../truth.service';
   styleUrls: ['./monkey-details.component.css']
 })
 export class MonkeyDetailsComponent implements OnInit {
-  monkey = {};
+  monkey = {name: "", height: "", weight: "", locations_of_origin: "",
+            diet: "", description: "", social_order: "", lifespan: "",
+            image1: "", image2: "", genus: "", sub_family: ""};
   monkeys = [];
   errorMessage: string = '';
-  // marmoset = {};
-  // tamarin = {};
-  // squirrel = {};
-  // capuchin = {};
-  // night = {};
-  // saki = {};
-  // spider = {};
-  // howler = {};
-  // colobus = {};
-  // langur = {};
-  // proboscis = {};
-  // baboon = {};
-  // mandrill = {};
-  // guenon = {};
-  // macaque = {};
 
 
 
@@ -55,7 +42,14 @@ export class MonkeyDetailsComponent implements OnInit {
     }
 
     previewOtherMonkey(monkey){
-      console.log(monkey.name)
+      this.monkey = monkey;
+
+    }
+
+    previewNoMonkey(){
+      this.myRoute.params.subscribe((params) => {
+        this.getMonkeyDetails(params['id']);
+      });
     }
 
 
