@@ -10,6 +10,7 @@ import { MonkeyListComponent } from './monkey-list/monkey-list.component';
 import { TruthService } from './truth.service';
 import { MonkeyDetailsComponent } from './monkey-details/monkey-details.component';
 import { MonkeyBoxComponent } from './monkey-box/monkey-box.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MonkeyBoxComponent } from './monkey-box/monkey-box.component';
     MonkeyComponent,
     MonkeyListComponent,
     MonkeyDetailsComponent,
-    MonkeyBoxComponent
+    MonkeyBoxComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
