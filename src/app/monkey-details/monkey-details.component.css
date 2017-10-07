@@ -21,6 +21,10 @@
     margin: 2px;
 }
 
+.top-row button:hover{
+    font-size: 18px;
+}
+
 .top-row button:nth-child(odd) {
       animation:myfirst 4s;
       -moz-animation:myfirst 4s infinite; /* Firefox */
@@ -37,6 +41,7 @@
 .monkey-pic1{
 width: 200px;
 border-radius: 10px;
+margin: 20px;
 }
 .monkey-pic2{
   border-radius: 10px;
@@ -67,25 +72,18 @@ border-radius: 10px;
       }
 
 
-      #container p:nth-child(even){
-        padding: 10px;
-        border-radius: 20px;
-        margin: 20px;
-            animation:monkey-details-anim2 50s;
-            -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
-          -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
 
-            }
+#container p:nth-child(even){
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+      animation:monkey-details-anim2 50s;
+      -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
+    -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
+
+      }
 
 
-            .monkey-pic-background{
-              border-radius: 20px;
-              display: inline-block;
-              padding: 20px;
-              animation:monkey-details-anim2 50s;
-              -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
-            -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
-              }
       @-moz-keyframes monkey-details-anim /* Firefox */
     {
       0%  {background:hsl(60, 80%, 20%);
