@@ -19,10 +19,11 @@
     background-color: #222250;
     border: none;
     margin: 2px;
+    height: 40px;
 }
 
 .top-row button:hover{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .top-row button:nth-child(odd) {
