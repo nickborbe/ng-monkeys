@@ -27,13 +27,13 @@
     font-size: 17px;
 }
 
-.top-row button:nth-child(odd) {
+.top-row a:nth-child(odd) {
       animation:myfirst 4s;
       -moz-animation:myfirst 4s infinite; /* Firefox */
     -webkit-animation:myfirst 4s infinite; /* Safari and Chrome */
       }
 
-.top-row button:nth-child(even) {
+.top-row a:nth-child(even) {
       animation:mysecond 4s;
       -moz-animation:mysecond 4s infinite; /* Firefox */
     -webkit-animation:mysecond 4s infinite; /* Safari and Chrome */
