@@ -8,22 +8,23 @@ import { TruthService } from '../truth.service';
 })
 export class MonkeyDetailsComponent implements OnInit {
   monkey = {};
+  monkeys = [];
   errorMessage: string = '';
-  marmoset = {};
-  tamarin = {};
-  squirrel = {};
-  capuchin = {};
-  night = {};
-  saki = {};
-  spider = {};
-  howler = {};
-  colobus = {};
-  langur = {};
-  proboscis = {};
-  baboon = {};
-  mandrill = {};
-  guenon = {};
-  macaque = {};
+  // marmoset = {};
+  // tamarin = {};
+  // squirrel = {};
+  // capuchin = {};
+  // night = {};
+  // saki = {};
+  // spider = {};
+  // howler = {};
+  // colobus = {};
+  // langur = {};
+  // proboscis = {};
+  // baboon = {};
+  // mandrill = {};
+  // guenon = {};
+  // macaque = {};
 
 
 
@@ -33,14 +34,30 @@ export class MonkeyDetailsComponent implements OnInit {
       private myNavigator: Router
     ) { }
 
+    // shortenMonkeyName(name){
+    //   name.replace(" Monkey", "");
+    // }
+
     ngOnInit() {
       //get the main monkey details
       this.myRoute.params.subscribe((params) => {
         this.getMonkeyDetails(params['id']);
       });
 // get all the other monkeys for previews
+      this.truthService.getMonkeys()
+      .then((list) => {
+      this.monkeys = list;
+      });
 
+      // this.monkeys.forEach(function(monkey){
+      //   monkey.name = monkey.name.replace("Monkey", "");
+      // });
     }
+
+    previewOtherMonkey(monkey){
+      console.log(monkey.name)
+    }
+
 
     getMonkeyDetails(id) {
       this.truthService.getMonkeyDetails(id)

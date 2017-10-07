@@ -48,6 +48,7 @@ export class MonkeyListComponent implements OnInit {
     this.truthService.previewNoWorld();
   }
 
+
   ngOnInit() {
 
   this.truthService.getMonkeys()
