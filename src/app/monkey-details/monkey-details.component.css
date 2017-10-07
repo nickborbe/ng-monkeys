@@ -15,15 +15,23 @@
 }
 
 .top-row button{
-
     /*background-color: #000065;*/
-     background-color: #222250;
+    background-color: #222250;
     border: none;
     margin: 2px;
-
-
-
 }
+
+.top-row button:nth-child(odd) {
+      animation:myfirst 4s;
+      -moz-animation:myfirst 4s infinite; /* Firefox */
+    -webkit-animation:myfirst 4s infinite; /* Safari and Chrome */
+      }
+
+.top-row button:nth-child(even) {
+      animation:mysecond 4s;
+      -moz-animation:mysecond 4s infinite; /* Firefox */
+    -webkit-animation:mysecond 4s infinite; /* Safari and Chrome */
+      }
 
 
 .monkey-pic1{
@@ -68,6 +76,16 @@ border-radius: 10px;
           -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
 
             }
+
+
+            .monkey-pic-background{
+              border-radius: 20px;
+              display: inline-block;
+              padding: 20px;
+              animation:monkey-details-anim2 50s;
+              -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
+            -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
+              }
       @-moz-keyframes monkey-details-anim /* Firefox */
     {
       0%  {background:hsl(60, 80%, 20%);
@@ -137,13 +155,32 @@ border-radius: 10px;
 
 
 
+  @-moz-keyframes myfirst /* Firefox */
+{
+  0%  {background:#222250;}
+  50%   {background:hsl(140, 80%, 10%);}
+  100%   {background:#222250;}
+}
+
+    @-webkit-keyframes myfirst /* Safari and Chrome */
+{
+  0%  {background:#222250;}
+  50%   {background:hsl(140, 80%, 10%);}
+  100%   {background:#222250;}
+}
 
 
-.monkey-pic-background{
-  border-radius: 20px;
-  display: inline-block;
-  padding: 20px;
-  animation:monkey-details-anim2 50s;
-  -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
--webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
-  }
+
+@-moz-keyframes mysecond /* Firefox */
+{
+0%  {background:hsl(140, 80%, 10%);}
+50%   {background:#222250;}
+100%   {background:hsl(140, 80%, 10%);}
+}
+
+  @-webkit-keyframes mysecond /* Safari and Chrome */
+{
+0%  {background:hsl(140, 80%, 10%);}
+50%   {background:#222250;}
+100%   {background:hsl(140, 80%, 10%);}
+}
