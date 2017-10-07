@@ -50,7 +50,6 @@ export class MonkeyDetailsComponent implements OnInit {
     }).then((monkey) => {
       this.monkeys.forEach(function(monkey){
           monkey.shortName = monkey.name.replace("Monkey", "");
-          console.log(monkey.shortName);
         });
   })
     }

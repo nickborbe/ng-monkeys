@@ -14,16 +14,17 @@
   text-align: center;
 }
 
-.top-row button{
+.top-row a{
     /*background-color: #000065;*/
     background-color: #222250;
     border: none;
     margin: 2px;
-    height: 40px;
+    height: 35px;
+    font-size: 14px;
 }
 
-.top-row button:hover{
-    font-size: 19px;
+.top-row a:hover{
+    font-size: 17px;
 }
 
 .top-row button:nth-child(odd) {
