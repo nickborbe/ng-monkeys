@@ -1,7 +1,7 @@
 body{
-  width: 90%;
+  max-width: 1100px;
+  overflow-x: hidden;
 }
-
 #container {
   z-index: -2;
   background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));
@@ -11,7 +11,6 @@ body{
   width: 100%;
   padding-bottom: 50px;
   line-height: 40px;
-
 }
 
 .top-row{
@@ -54,7 +53,7 @@ margin: 20px;
   margin: 10px 10px 0 0;
   min-height: 500px;
   max-height: 700px;
-  max-width: 48%;
+  max-width: 45%;
   float: right;
 }
 
@@ -71,6 +70,7 @@ margin: 20px;
   padding: 10px;
   border-radius: 20px;
   margin: 20px;
+  width: 85%;
       animation:monkey-details-anim 50s;
       -moz-animation:monkey-details-anim 50s infinite; /* Firefox */
     -webkit-animation:monkey-details-anim 50s infinite; /* Safari and Chrome */
@@ -83,6 +83,7 @@ margin: 20px;
   padding: 10px;
   border-radius: 20px;
   margin: 20px;
+  width: 85%;
       animation:monkey-details-anim2 50s;
       -moz-animation:monkey-details-anim2 50s infinite; /* Firefox */
     -webkit-animation:monkey-details-anim2 50s infinite; /* Safari and Chrome */
