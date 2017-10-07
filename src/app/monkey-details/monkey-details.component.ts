@@ -10,6 +10,8 @@ export class MonkeyDetailsComponent implements OnInit {
   monkey = {};
   errorMessage: string = '';
 
+
+
     constructor(
       private myRoute: ActivatedRoute,
       private truthService: TruthService,
@@ -17,11 +19,14 @@ export class MonkeyDetailsComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+      //get the main monkey details
       this.myRoute.params.subscribe((params) => {
         this.getMonkeyDetails(params['id']);
       });
+// get all the other monkeys for previews
+
     }
-    
+
     getMonkeyDetails(id) {
       this.truthService.getMonkeyDetails(id)
         .then((theMonkeyDetails) => {
