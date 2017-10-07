@@ -1,6 +1,6 @@
 <div id="container">
   <div class="top-row">
-    <button *ngFor="let oneMonkey of monkeys" (mouseover)="previewOtherMonkey(oneMonkey.name)" (mouseleave)="previewNoMonkey()" class="btn btn-primary">{{oneMonkey.name}}</button>
+    <button *ngFor="let oneMonkey of monkeys" (mouseover)="previewOtherMonkey(oneMonkey.name)" (mouseleave)="previewNoMonkey()" class="btn btn-primary">{{oneMonkey.shortName}}</button>
 
     <!-- <button class="btn btn-primary">tamarin</button><button class="btn btn-primary">squirrel</button><button class="btn btn-primary">capuchin</button>
     <button class="btn btn-primary">night</button><button class="btn btn-primary">saki</button><button class="btn btn-primary">spider</button><button class="btn btn-primary">howler</button>

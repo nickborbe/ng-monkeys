@@ -46,12 +46,13 @@ export class MonkeyDetailsComponent implements OnInit {
 // get all the other monkeys for previews
       this.truthService.getMonkeys()
       .then((list) => {
-      this.monkeys = list;
-      });
-
-      // this.monkeys.forEach(function(monkey){
-      //   monkey.name = monkey.name.replace("Monkey", "");
-      // });
+      this.monkeys = list
+    }).then((monkey) => {
+      this.monkeys.forEach(function(monkey){
+          monkey.shortName = monkey.name.replace("Monkey", "");
+          console.log(monkey.shortName);
+        });
+  })
     }
 
     previewOtherMonkey(monkey){
