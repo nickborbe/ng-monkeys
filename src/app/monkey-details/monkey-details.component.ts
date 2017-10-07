@@ -9,6 +9,21 @@ import { TruthService } from '../truth.service';
 export class MonkeyDetailsComponent implements OnInit {
   monkey = {};
   errorMessage: string = '';
+  marmoset = {};
+  tamarin = {};
+  squirrel = {};
+  capuchin = {};
+  night = {};
+  saki = {};
+  spider = {};
+  howler = {};
+  colobus = {};
+  langur = {};
+  proboscis = {};
+  baboon = {};
+  mandrill = {};
+  guenon = {};
+  macaque = {};
 
 
 
