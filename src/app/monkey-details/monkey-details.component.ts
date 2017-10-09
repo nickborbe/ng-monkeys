@@ -7,6 +7,7 @@ import { TruthService } from '../truth.service';
   styleUrls: ['./monkey-details.component.css']
 })
 export class MonkeyDetailsComponent implements OnInit {
+  // gotta come back and do the typsesript stuff
   monkey = {name: "", height: "", weight: "", locations_of_origin: "",
             diet: "", description: "", social_order: "", lifespan: "",
             image1: "", image2: "", genus: "", sub_family: ""};
