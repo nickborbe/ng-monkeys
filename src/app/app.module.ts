@@ -11,6 +11,7 @@ import { TruthService } from './truth.service';
 import { MonkeyDetailsComponent } from './monkey-details/monkey-details.component';
 import { MonkeyBoxComponent } from './monkey-box/monkey-box.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AddMonkeyComponent } from './add-monkey/add-monkey.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MonkeyListComponent,
     MonkeyDetailsComponent,
     MonkeyBoxComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddMonkeyComponent
   ],
   imports: [
     BrowserModule,
