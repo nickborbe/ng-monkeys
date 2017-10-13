@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'monkey/addnew',
     component: AddMonkeyComponent
-  },
+  }
 
 
 ];
