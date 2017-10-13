@@ -8,6 +8,11 @@ body {
   background-size: cover;
 }
 
+  /*background: linear-gradient(hsl(180, 59%, 80%), hsl(60, 80%, 20%));*/
+
+  /*50%   {background:#222250;}
+  100%   {background:hsl(140, 80%, 10%);}*/
+
 .container {
   width: 100%;
   padding-top: 60px;
