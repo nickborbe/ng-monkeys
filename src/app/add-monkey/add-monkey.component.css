@@ -99,6 +99,7 @@ li {
 }
 
 .form-signin {
+  color:white;
   width: 430px;
   height: 375px;
 	font-size: 16px;
@@ -122,9 +123,7 @@ li {
   padding-left: 37px;
   padding-right: 37px;
   padding-top: 55px;
-  position: relative;
-  top: -375px;
-  left: 400px;
+  color: white;
   opacity: 0;
   transition: all .5s ease;
 }
@@ -143,9 +142,7 @@ li {
   width: 80%;
   height: 150px;
   text-align: center;
-  position: relative;
-  top: -890px;
-  left: 450px;
+
   opacity: .0;
   transition: all .8s .4s ease;
 }
@@ -218,7 +215,7 @@ label {
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
-  display: none;
+  /*display: none;*/
 }
 
 [type="checkbox"]:not(:checked) + label,
@@ -405,8 +402,7 @@ a.btn-signup:hover, a.btn-signin:hover {
 
 .cover-photo {
   height: 150px;
-  position: relative;
-  left: 0px;  top: -900px;
+
   background:
     linear-gradient(
     rgba(35,43,85,0.75),
@@ -417,30 +413,6 @@ a.btn-signup:hover, a.btn-signin:hover {
   transition: all 1.5s ease 0.55s;
 }
 
-.cover-photo-down {
-  top: -575px;
-  opacity: 1;
-}
-
-.profile-photo {
-  height: 125px;
-  width: 125px;
-  position: relative;
-  border-radius: 70px;
-  left: 155px;
-  top: -1000px;
-  background: url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/nature-water-rocks-hiking.jpg);
-  background-size: 100% 135%;
-  background-position: 100% 100%;
-  opacity: 0;
-  transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-  border: solid 3px #ffffff;
-}
-
-.profile-photo-down {
-  top: -636px;
-  opacity: 1;
-}
 
 h1 {
   color: #ffffff;
