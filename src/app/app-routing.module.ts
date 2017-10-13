@@ -18,7 +18,7 @@ const routes: Routes = [
     component: MonkeyDetailsComponent
   },
   {
-    path: 'monkey/addnew',
+    path: 'addnew',
     component: AddMonkeyComponent
   }
 
