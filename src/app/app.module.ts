@@ -12,6 +12,7 @@ import { MonkeyDetailsComponent } from './monkey-details/monkey-details.componen
 import { MonkeyBoxComponent } from './monkey-box/monkey-box.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddMonkeyComponent } from './add-monkey/add-monkey.component';
+import { EditMonkeyComponent } from './edit-monkey/edit-monkey.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AddMonkeyComponent } from './add-monkey/add-monkey.component';
     MonkeyDetailsComponent,
     MonkeyBoxComponent,
     NavbarComponent,
-    AddMonkeyComponent
+    AddMonkeyComponent,
+    EditMonkeyComponent
   ],
   imports: [
     BrowserModule,
