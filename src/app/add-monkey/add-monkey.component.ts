@@ -27,7 +27,7 @@ export class AddMonkeyComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendNewPhoneToApi(){
+  sendNewMonkeyToApi(){
   this.newMonkey = {
   name: this.name,
   averageHeight: this.averageHeight,
@@ -40,7 +40,7 @@ export class AddMonkeyComponent implements OnInit {
   socialOrder: this.socialOrder,
   description: this.description
   }
-  this.truthService.createNew(this.newPhone).then(()=>{
+  this.truthService.createNew(this.newMonkey).then(()=>{
   this.name = "";
   this.averageHeight = "";
   this.averageWeight = "";
