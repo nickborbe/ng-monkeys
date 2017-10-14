@@ -8,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class AddMonkeyComponent implements OnInit {
 
   newMonkey: Object;
-brand: String;
-name: String;
-specs: Array<String>;
-image: String;
+  Name:String;
+  AverageHeight:String;
+  AverageWeight:String;
+  ScientificName:String;
+  Genus:String;
+  Lifespan:String;
+  LocationsOfOrigin:String;
+  Diet:String;
+  SocialOrder:String;
+  Description:String;
 
   constructor() { }
 
