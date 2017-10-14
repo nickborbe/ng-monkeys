@@ -28,6 +28,7 @@ export class AddMonkeyComponent implements OnInit {
   }
 
   createNewMonkey(){
+    console.log("creating new monkey yo!")
   this.newMonkey = {
   name: this.name,
   averageHeight: this.averageHeight,
