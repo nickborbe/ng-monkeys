@@ -1,6 +1,6 @@
 <div class="frame">
 
-  <form class="form-signin" action="" method="post">
+  <form (ngSubmit)="createNewMonkey()"class="form-signin" action="" method="post">
 
     <label>Name:</label>
     <input class="form-styling" type="text" name="name" [(ngModel)]="name">
@@ -31,6 +31,8 @@
 
     <label>Description:</label>
     <input class="form-styling" type="text" name="description" [(ngModel)]="description">
+
+    <button click="createNewMonkey()" type="button" name="button">Save</button>
 
   </form>
 
