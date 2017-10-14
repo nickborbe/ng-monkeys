@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMonkeyComponent implements OnInit {
 
-  // newMonkey: Object;
+  newMonkey: Object;
   name:String;
   averageHeight:String;
   averageWeight:String;
