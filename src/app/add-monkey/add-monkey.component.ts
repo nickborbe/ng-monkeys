@@ -25,11 +25,17 @@ export class AddMonkeyComponent implements OnInit {
   }
 
   sendNewPhoneToApi(){
-  this.newPhone = {
-    brand: this.brand,
-    name: this.name,
-    specs: this.specs,
-    image: this.image
+  this.newMonkey = {
+  name: this.name,
+  averageHeight: this.averageHeight,
+  averageWeight: this.averageWeight,
+  scientificName: this.scientificName,
+  genus: this.genus,
+  lifespan: this.lifespan,
+  locationsOfOrigin: this.locationsOfOrigin,
+  diet: this.diet,
+  socialOrder: this.socialOrder,
+  description: this.description
   }
   this.myPhoneService.createNew(this.newPhone).then(()=>{
     this.brand = "";
