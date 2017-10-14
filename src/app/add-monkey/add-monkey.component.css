@@ -36,6 +36,15 @@ body {
   transition: all .5s ease;
 }
 
+.monkey-world-btns{
+
+  /*background-color: #000065;*/
+   background-color: #222250;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
 
 .nav {
   width: 100%;
