@@ -46,7 +46,7 @@ export class AddMonkeyComponent implements OnInit {
   this.name = "";
   this.height = "";
   this.weight = "";
-  this.sub_family = "";
+  this.subFamily = "";
   this.genus = "";
   this.lifespan = "";
   this.locationsOfOrigin = "";
