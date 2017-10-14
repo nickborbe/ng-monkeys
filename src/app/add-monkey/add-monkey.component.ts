@@ -27,7 +27,7 @@ export class AddMonkeyComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendNewMonkeyToApi(){
+  createNewMonkey(){
   this.newMonkey = {
   name: this.name,
   averageHeight: this.averageHeight,
