@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TruthService } from '../truth.service';
+
 
 @Component({
   selector: 'app-add-monkey',
@@ -19,7 +21,8 @@ export class AddMonkeyComponent implements OnInit {
   socialOrder:String;
   description:String;
 
-  constructor() { }
+  constructor(private truthService: TruthService,
+) { }
 
   ngOnInit() {
   }
@@ -37,12 +40,18 @@ export class AddMonkeyComponent implements OnInit {
   socialOrder: this.socialOrder,
   description: this.description
   }
-  this.myPhoneService.createNew(this.newPhone).then(()=>{
-    this.brand = "";
-    this.name = "";
-    this.specs = [];
-    this.image = "";
-    this.newPhone = {};
+  this.truthService.createNew(this.newPhone).then(()=>{
+  this.name = "";
+  this.averageHeight = "";
+  this.averageWeight = "";
+  this.scientificName = "";
+  this.genus = "";
+  this.lifespan = "";
+  this.locationsOfOrigin = "";
+  this.diet = "";
+  this.socialOrder = "";
+  this.description = "";
+  this.newMonkey = {};
   });
 }
 
