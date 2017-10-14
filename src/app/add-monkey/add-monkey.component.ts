@@ -31,9 +31,9 @@ export class AddMonkeyComponent implements OnInit {
 
   this.newMonkey = {
   name: this.name,
-  averageHeight: this.averageHeight,
-  averageWeight: this.averageWeight,
-  scientificName: this.scientificName,
+  height: this.height,
+  weight: this.weight,
+  sub_family: this.sub_family,
   genus: this.genus,
   lifespan: this.lifespan,
   locationsOfOrigin: this.locationsOfOrigin,
@@ -44,9 +44,9 @@ export class AddMonkeyComponent implements OnInit {
   console.log(this.newMonkey);
   this.truthService.createNew(this.newMonkey).then(()=>{
   this.name = "";
-  this.averageHeight = "";
-  this.averageWeight = "";
-  this.scientificName = "";
+  this.height = "";
+  this.weight = "";
+  this.sub_family = "";
   this.genus = "";
   this.lifespan = "";
   this.locationsOfOrigin = "";
