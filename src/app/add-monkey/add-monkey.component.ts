@@ -11,14 +11,14 @@ export class AddMonkeyComponent implements OnInit {
 
   newMonkey: Object;
   name:String;
-  averageHeight:String;
-  averageWeight:String;
-  scientificName:String;
+  height:String;
+  weight:String;
+  sub_family:String;
   genus:String;
   lifespan:String;
-  locationsOfOrigin:String;
+  locations_of_origin:String;
   diet:String;
-  socialOrder:String;
+  social_order:String;
   description:String;
 
   constructor(private truthService: TruthService,
@@ -28,7 +28,7 @@ export class AddMonkeyComponent implements OnInit {
   }
 
   createNewMonkey(){
-    console.log("creating new monkey yo!")
+
   this.newMonkey = {
   name: this.name,
   averageHeight: this.averageHeight,
@@ -41,6 +41,7 @@ export class AddMonkeyComponent implements OnInit {
   socialOrder: this.socialOrder,
   description: this.description
   }
+  console.log(this.newMonkey);
   this.truthService.createNew(this.newMonkey).then(()=>{
   this.name = "";
   this.averageHeight = "";
