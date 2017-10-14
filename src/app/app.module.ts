@@ -28,7 +28,8 @@ import { EditMonkeyComponent } from './edit-monkey/edit-monkey.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    FormsModule
 
   ],
   providers: [TruthService],
