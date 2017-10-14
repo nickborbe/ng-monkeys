@@ -12,9 +12,10 @@ whichWorldPreview:BehaviorSubject<string> = new BehaviorSubject("new");
 
   constructor(private myHttp: Http) { }
 
-  createNew(monkey){
-    
-
+  createNew(dataToSend) {
+    return this.myHttp.post(`${this.BASE_URL}/api/phones`, dataToSend)
+      .toPromise()
+      .then(apiResponse => apiResponse.json())
   }
 
   getMonkeys(){
