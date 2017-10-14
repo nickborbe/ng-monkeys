@@ -1,39 +1,54 @@
-<div class="frame">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">Modal title</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
 
-  <form (ngSubmit)="createNewMonkey()"class="form-signin" action="" method="post">
+    <div class="frame">
 
-    <label>Name:</label>
-    <input class="form-styling" type="text" name="name" [(ngModel)]="name">
+      <form (ngSubmit)="createNewMonkey()"class="form-signin" action="" method="post">
 
-    <label>Average Height:</label>
-    <input class="form-styling" type="text" name="averageHeight" [(ngModel)]="averageHeight">
+        <label>Name:</label>
+        <input class="form-styling" type="text" name="name" [(ngModel)]="name">
 
-    <label>Average Weight:</label>
-    <input class="form-styling" type="text" name="averageWeight" [(ngModel)]="averageWeight">
+        <label>Average Height:</label>
+        <input class="form-styling" type="text" name="averageHeight" [(ngModel)]="averageHeight">
 
-    <label>Scientific Name:</label>
-    <input class="form-styling" type="text" name="scientificName" [(ngModel)]="scientificName">
+        <label>Average Weight:</label>
+        <input class="form-styling" type="text" name="averageWeight" [(ngModel)]="averageWeight">
 
-    <label>Genus:</label>
-    <input class="form-styling" type="text" name="genus" [(ngModel)]="genus">
+        <label>Scientific Name:</label>
+        <input class="form-styling" type="text" name="scientificName" [(ngModel)]="scientificName">
 
-    <label>Lifespan:</label>
-    <input class="form-styling" type="text" name="lifespan" [(ngModel)]="lifespan">
+        <label>Genus:</label>
+        <input class="form-styling" type="text" name="genus" [(ngModel)]="genus">
 
-    <label>Locations of Origin:</label>
-    <input class="form-styling" type="text" name="locationsofOrigin" [(ngModel)]="locationsofOrigin">
+        <label>Lifespan:</label>
+        <input class="form-styling" type="text" name="lifespan" [(ngModel)]="lifespan">
 
-    <label>Diet:</label>
-    <input class="form-styling" type="text" name="diet" [(ngModel)]="diet">
+        <label>Locations of Origin:</label>
+        <input class="form-styling" type="text" name="locationsofOrigin" [(ngModel)]="locationsofOrigin">
 
-    <label>Social Order:</label>
-    <input class="form-styling" type="text" name="socialOrder" [(ngModel)]="socialOrder">
+        <label>Diet:</label>
+        <input class="form-styling" type="text" name="diet" [(ngModel)]="diet">
 
-    <label>Description:</label>
-    <input class="form-styling" type="text" name="description" [(ngModel)]="description">
+        <label>Social Order:</label>
+        <input class="form-styling" type="text" name="socialOrder" [(ngModel)]="socialOrder">
 
-    <button click="createNewMonkey()" type="button" name="button">Save</button>
+        <label>Description:</label>
+        <input class="form-styling" type="text" name="description" [(ngModel)]="description">
 
-  </form>
+        <button click="createNewMonkey()" type="button" name="button">Save</button>
 
+      </form>
+
+    </div>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+</div>
 </div>
