@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMonkeyComponent implements OnInit {
 
-  newMonkey: Object;
-  Name:String;
-  AverageHeight:String;
-  AverageWeight:String;
-  ScientificName:String;
-  Genus:String;
-  Lifespan:String;
-  LocationsOfOrigin:String;
-  Diet:String;
-  SocialOrder:String;
-  Description:String;
+  // newMonkey: Object;
+  name:String;
+  averageHeight:String;
+  averageWeight:String;
+  scientificName:String;
+  genus:String;
+  lifespan:String;
+  locationsOfOrigin:String;
+  diet:String;
+  socialOrder:String;
+  description:String;
 
   constructor() { }
 
