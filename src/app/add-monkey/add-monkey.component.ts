@@ -13,12 +13,12 @@ export class AddMonkeyComponent implements OnInit {
   name:String;
   height:String;
   weight:String;
-  sub_family:String;
+  subFamily:String;
   genus:String;
   lifespan:String;
-  locations_of_origin:String;
+  locationsOfOrigin:String;
   diet:String;
-  social_order:String;
+  socialOrder:String;
   description:String;
 
   constructor(private truthService: TruthService,
@@ -33,10 +33,10 @@ export class AddMonkeyComponent implements OnInit {
   name: this.name,
   height: this.height,
   weight: this.weight,
-  sub_family: this.sub_family,
+  sub_family: this.subFamily,
   genus: this.genus,
   lifespan: this.lifespan,
-  locationsOfOrigin: this.locationsOfOrigin,
+  locations_of_origin: this.locationsOfOrigin,
   diet: this.diet,
   socialOrder: this.socialOrder,
   description: this.description
