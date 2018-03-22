@@ -1,14 +1,14 @@
-import { MonkeyCityPage } from './app.po';
+import { FullPage } from './app.po';
 
-describe('monkey-city App', () => {
-  let page: MonkeyCityPage;
+describe('full App', function() {
+  let page: FullPage;
 
   beforeEach(() => {
-    page = new MonkeyCityPage();
+    page = new FullPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
